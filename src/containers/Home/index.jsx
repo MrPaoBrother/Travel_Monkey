@@ -548,11 +548,7 @@ class Home extends React.Component {
                     // onClick={this.buyProduct.bind(this)}
                 />
                 <Bag bag={this.state.bag}/>
-                <Wallet fruits={this.state.fruits} onClick={() => {
-                    var monkey = this.state.monkey
-                    monkey[3] = 2
-                    this.setState({monkey: monkey})
-                }}/>
+                <Wallet fruits={this.state.fruits} />
 
             </div>)
     }

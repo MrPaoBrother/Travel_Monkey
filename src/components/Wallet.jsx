@@ -45,7 +45,7 @@ class Wallet extends React.Component {
     render() {
         return (
             <div>
-                <img src={wallet} className="wallet-button" onClick={this.props.onClick} />
+                <img src={wallet} className="wallet-button"  />
                 <span className="wallet-button">{this.props.fruits}</span>
             </div>
         )
