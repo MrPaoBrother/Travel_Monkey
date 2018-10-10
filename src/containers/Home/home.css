@@ -1,0 +1,126 @@
+.stage{
+
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+
+    margin: 0 auto;
+}
+.bg {
+
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size: cover;
+    /*background-size：100% 100%;*/
+}
+
+.bg_bed{
+    position: absolute;
+    left: 88px;
+    top: 2px;
+    pointer-events: none;
+}
+
+.bg_tree{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bg_bit{
+    position: absolute;
+    left: 770px;
+    top: 450px;
+    pointer-events: none;
+}
+
+.bg_frontbg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.bg_quilt{
+    position: absolute;
+    left: 20%;
+    top: 58%;
+}
+
+.bg_pc{
+    position: absolute;
+    left: 48%;
+    top: 49%;
+}
+
+.bag-button{
+    position: absolute;
+    left: 28%;
+    top: 1%;
+}
+
+.wallet-button{
+    position: absolute;
+    left: 20%;
+    top: 4%;
+    font-size: 50px;
+}
+
+.market-button{
+    position: absolute;
+    left: 10%;
+    top: 4%;
+}
+
+.market-bg {
+    overflow: hidden;
+    position: fixed;
+    /*width: 100%;*/
+    height: 100%;
+    background: url("../../images/market-bg.png") no-repeat;
+    /*background-size: cover;*/
+}
+/*.name-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/name-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
+/*.wallet-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/wallet-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
+.bag-bg {
+    overflow: hidden;
+    position: fixed;
+    /*width: 100%;*/
+    height: 100%;
+    background: url("../../images/bag-bg.png") no-repeat;
+    /*background-size: cover;*/
+}
+
+.pic_wall-bg{
+
+    overflow: hidden;
+    position: fixed;
+    /*width: 100%;*/
+    height: 100%;
+
+    overflow:scroll;
+    /*background: url("../../images/pic-wall-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+
+}
+.market-title{
+    position: absolute;
+    top:0;
+    left:400px;
+    font-size: 40px;
+}

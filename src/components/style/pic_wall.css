@@ -1,0 +1,95 @@
+.pic_wall_bg {
+    height: 60%;
+
+    align-items: center;
+    justify-content: center;
+    background: url("../../images/pic-wall-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.pic_wall {
+    width: 60%;
+    height: 100%;
+    background: url("../../images/pic-wall-bg.png") no-repeat;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.pic_wall_icon {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.pic_wall_button {
+    position: absolute;
+    left: 30%;
+    top:20%;
+}
+
+.pic{
+    width: 400px;
+    height: 200px;
+}
+
+
+.pic-bg {
+    /*flex-direction: column;*/
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 200px;
+    margin:20px;
+    /*margin-bottom: 100px;*/
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pic-container{
+    /*margin-left: 350px;*/
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pic-bg_l {
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 200px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pic-container_l{
+    margin-left: 350px;
+    margin-top:200px;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    width: 1400px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pic_wall_bg_l{
+    width: 400px;
+    height: 200px;
+}
