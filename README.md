@@ -65,13 +65,11 @@ $ node deploy.js
     const config = {
     // 你使用了哪条链
     chain: 'http://121.196.200.225:1337',
-    // privateKey: 'a3b33668e5be5b31e08f5695a1efb21bd0c2e8607d06a5b55021585883be93ac',
     privateKey: '你的私钥',
     from : '你的公钥',
     // 部署后的合约地址
     contractAddress: '0x287e531104ADC074650F5cD60327b5088fa9Cd72',
-
-    apiAddress:'http://58.87.125.190:9999',
+    apiAddress:'https://www.yimixiaoyuan.top',
 }
         
    ```
@@ -110,6 +108,72 @@ Starting the development server...
 
 * 最后打开浏览器运行 ```http://localhost:3000/```
 
+
+## 项目说明
+
+### 前端部分
+
+* 前端基于React框架
+
+### 文件结构
+
+* ./node_modules 文件夹下是运行所需要的第三方库
+
+* ./public 文件夹下是前端引用的静态文件
+
+* ./readme_images 是程序的部分截图
+
+* ./src 文件夹下是核心代码
+
+* ./src/components 下是网页中用到的组件
+
+* ./src/containers 下是网站的各个页面，目前我们是单页的，所以只有一个Home文件夹
+
+* ./src/contracts 下是合约相关的文件
+
+* ./src/images 下是网站本地的图片
+
+* ./src/store 下是redux相关的文件，下一个版本将引入redux和redux saga，这个版本暂时没用到 
+
+* ./src/config.js 合约的配置文件，包括用的链的地址，用户私钥，用户地址，合约地址，后台服务器的地址
+
+
+
+
+
+### 合约相关的函数
+
+* ./src/container/Home/index.jsx 中引用了大部分的合约函数，多数函数名和合约上的函数名一致
+
+* getMonkeycount() 是从合约上获取当前猴子数量的函数
+
+* freeMonkey() 是用户在没有猴子时从合约上获取一只新猴子的函数
+
+* getMonkey() 是用户从合约上获取自己的猴子的详细信息的函数
+
+* getTree() 是用户从合约上获取香蕉树上香蕉数量（游戏中的积分）的函数
+
+* getBananaFromTree() 是在合约中从香蕉树上收获香蕉的函数
+
+* getowner2picture() 是用户从合约上获取自己猴子的照片墙上照片的ID的数组的函数
+
+* getPicture() 是用户从合约上获取ID对应的照片的详细信息的函数
+
+* getowner2product() 是用户从合约上获取自己猴子的背包里物品的ID的数组的函数
+
+* getProduct() 是用户从合约上获取ID对应的物品的详细信息的函数
+
+* checkWalkout() 是从合约上检查猴子是否出去旅行的函数
+
+
+
+
+
+### 后台服务器相关的函数
+
+* story_happen() 是从服务器发送跟踪猴子旅行故事请求的函数
+
+* get_monkey_status() 是从服务器中发送返回猴子旅行状态的函数
 
 ## 效果展示
 
